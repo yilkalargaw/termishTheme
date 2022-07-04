@@ -1,0 +1,12 @@
+{{ define "main" }}
+<!-- <div>
+     <i> Table Of Contents</i>
+	 <p>{{ .Title }}</p>
+     {{ .Page.TableOfContents }}
+	 </div> -->
+
+	<h1>{{ .Title }}</h1>
+<div class="metadata">{{ partial "metadata.html" . }}</div>
+<br><br>
+{{ .Content }}
+{{ end }}
