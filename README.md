@@ -1,5 +1,5 @@
 # termishTheme
-A minimal hugo theme with dark-mode support designed from the groundup to look and feel texteditor.
+A minimal hugo theme with dark-mode support designed from the groundup to look and feel like texteditor.
 
 Note: Currently it is a working progress.
 
