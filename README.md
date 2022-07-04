@@ -9,8 +9,8 @@ Look and feel
  
  <br><br>
  ![Screenshot-2 of termishTheme for hugo](./images/scrot-02.png)(screenshot 2)
-  <br><br>
+ <br><br>
  ![Screenshot-3 of termishTheme for hugo](./images/scrot-03.png)(screenshot 3)
-  <br><br>
+ <br><br>
  ![Screenshot-4 of termishTheme for hugo](./images/scrot-04.png)(screenshot 4)
-  <br><br>
+ <br><br>
