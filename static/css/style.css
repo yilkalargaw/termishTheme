@@ -81,6 +81,27 @@ h6::before { filter: contrast(2%); content: '****** '; }
 	flex: 25%;
 }
 
+.header {
+	display: flex;
+	flex-direction: row;
+	border-style:solid;
+	border-width: 0.0em 0.0em 0.1em 0.0em;
+	margin-bottom: 2em;
+}
+
+.header-left {
+	padding-right: 3em;
+	flex: 85%;
+	text-align: justify;
+}
+
+.header-right {
+	/* background-color: dodgerblue; */
+	padding-left: 3em;
+	padding-right: 3em;
+	flex: 15%;
+}
+
 #darkmode {
 	text-align: right;
 }
@@ -120,6 +141,11 @@ h6::before { filter: contrast(2%); content: '****** '; }
 	background: inherit;
 	filter: contrast(95%);
 	text-align: center;
+}
+
+
+.logo {
+	font-size: 2em;
 }
 
 .summary h1{
@@ -206,15 +232,15 @@ figure img {
 	border: 0;
 	outline: 0;
 	cursor: pointer;
-	margin: 10px;
+	margin: 0.8em;
 }
 
 
 /* To create surface of toggle button */
 #color-mode:after {
 	content: '';
-	width: 60px;
-	height: 28px;
+	width: 4.3em;
+	height: 1.7em;
 	display: inline-block;
 	background: rgba(196, 195, 195, 0.55);
 	border-radius: 18px;
@@ -225,12 +251,12 @@ figure img {
 /* Contents before checkbox to create toggle handle */
 #color-mode:before {
 	content: '';
-	width: 32px;
-	height: 32px;
+	width: 1.7em;
+	height: 1.7em;
 	display: block;
 	position: absolute;
 	left: 0;
-	top: -3px;
+	top: 0em;
 	border-radius: 50%;
 	background: rgb(255, 255, 255);
 	box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
@@ -239,14 +265,13 @@ figure img {
 
 /* Shift the handle to left on check event */
 #color-mode:checked:before {
-	left: 32px;
+	left: 2.5em;
 	box-shadow: -1px 1px 3px rgba(0, 0, 0, 0.6);
 }
 /* Background color when toggle button will be active */
 #color-mode:checked:after {
 	background: #16a085;
 }
-
 
 /* #dark-mode:checked ~ * {
    background-color: #0c0d0e;
