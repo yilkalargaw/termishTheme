@@ -27,17 +27,19 @@
   *     content.innerText = "Dark Mode is ON";
 	} */
 
- function darken() {
-	 let dm = document.querySelector('#color-mode');
-	 if (dm.checked == true)
-	 {
-		 darkMode()
+ if (localStorage.getItem("button-pressed") === "true"){
+	 (localStorage.getItem("dark") === "true") || false;
+ }
+ else {
+	 if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches){
+		 localStorage.setItem("dark", "true");
 	 }
-	 else
-	 {
-		 lightMode()
+	 else{
+		 localStorage.setItem("dark", "false");
 	 }
  }
+
+
 
  var divfordark = document.getElementById('darkmode');
 
@@ -46,16 +48,23 @@
  cb.name = 'color-mode';
  cb.value = 'Dark';
  cb.id = "color-mode";
- cb.addEventListener("click", darken)
+ cb.checked = (localStorage.getItem("dark") === "true") || false;
+ cb.addEventListener("click", localStorage.setItem("button-pressed", "true"));
+ cb.addEventListener("click", setTheme);
  divfordark.appendChild(cb);
  divfordark.appendChild(document.createTextNode(" Dark Mode"));
 
- if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-	 let dm = document.querySelector('#color-mode');
-	 darkMode();
-	 dm.checked = true;
+ function setTheme(){
+	 if (cb.checked == true){
+		 localStorage.setItem("dark", "true");
+		 darkMode();
+	 }
+	 else{
+		 localStorage.setItem("dark", "false");
+		 lightMode();
+	 }
  }
- else {
-	 lightMode();
- }
+
+ setTheme();
+
 </script>
