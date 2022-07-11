@@ -4,7 +4,7 @@
 name = "TermishTheme"
 license = "MIT"
 licenselink = "https://github.com/yilkalargaw/termishTheme/blob/master/LICENSE"
-description = "A minimal responsivetheme designed to look like a texteditor and to work well whithout javascript"
+description = "A minimal responsivetheme designed to look like a texteditor and to work well even whithout javascript"
 homepage = "https://github.com/yilkalargaw/termishTheme"
 tags = ["minimal", "dark-mode", "clean", "simple", "blog", "editor"]
 features = ["responsive"]
