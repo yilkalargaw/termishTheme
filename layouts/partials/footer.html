@@ -1,5 +1,8 @@
 <div class="footer">
-  <div class="copyright">
-	Copyright (c) {{ now.Format "2006"}} John Doe
-  </div>
+  {{ if .Site.Data.social }}
+  {{ partial "social.html" . }}
+  {{ end }}
+  {{ with .Site.Params.footer.copyright_text }}
+  <div class="copyright">{{ . | safeHTML }}</div>
+  {{ end }}
 </div>
