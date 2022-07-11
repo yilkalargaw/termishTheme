@@ -2,6 +2,11 @@
 <html>
   {{- partial "head.html" . -}}
   <body>
+
+	{{ if or .Params.math .Site.Params.math }}
+	{{ partial "math.html" . }}
+	{{ end }}
+
     {{- partial "header.html" . -}}
 	<div class="flex-container">
       <div class="flex-item-left">
