@@ -1,0 +1,26 @@
+baseURL = 'http://example.org/'
+languageCode = 'en-us'
+title = 'My New Hugo Site'
+theme = "termishTheme"
+enableEmoji = true
+
+[params]
+  [params.footer]
+    copyright_text = 'Free Hugo theme by <a href="https://github.com/yilkalargaw">Yilkal A.</a>'
+
+[menu]
+  [[menu.main]]
+    name = "Home"
+    pre = "home"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    name = "Posts"
+    pre = "posts"
+    url = "/posts/"
+    weight = 2
+  [[menu.main]]
+    name = "Tags"
+    pre = "tag"
+    url = "/tags/"
+    weight = 3
