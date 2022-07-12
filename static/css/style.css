@@ -1,5 +1,5 @@
 body {
-	font-family: "Jetbrains Mono", monospace;
+	font-family: "Jetbrains Mono", "IBM Plex Mono", monospace;
 	padding-bottom: 3em;
 	font-size: 0.9em;
 	maximum-width: 200em;
